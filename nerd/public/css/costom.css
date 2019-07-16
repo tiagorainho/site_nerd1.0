@@ -1,0 +1,103 @@
+.message-box-others {
+  padding: 8px;
+  background-color: grey;
+  text-align: left;
+  color: white;
+  border:solid 1px grey;
+  border-radius:10px;
+  width:400px;
+}
+
+.message-box-me {
+  padding: 8px;
+  background-color: #31A6FF;
+  text-align: right;
+  color: white;
+  border:solid 1px #31A6FF;
+  border-radius:10px;
+  width:400px;
+}
+
+.slide-right {
+    position: relative;
+    animation-name: slide-right-animation;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+  }
+  @keyframes slide-right-animation {
+    0%   {opacity: 0; left:-30px; top:0px;}
+    100% {opacity: 1; left:0px; top:0px;}
+  }
+  
+  .slide-right-delay {
+    position: relative;
+    animation-name: slide-right-animation-delay;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+  }
+  @keyframes slide-right-animation-delay {
+    0%   {opacity: 0; left:-30px; top:0px;}
+    50%  {opacity: 0; left:-30px; top:0px}
+    100% {opacity: 1; left:0px; top:0px;}
+  }
+  
+  .slide-up {
+    position: relative;
+    animation-name: slide-up-animation;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+  }
+  @keyframes slide-up-animation {
+    0%   {opacity: 0; left:0px; top:30px;}
+    100% {opacity: 1; left:0px; top:0px;}
+  }
+
+  message-body {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 0 20px;
+  }
+  
+  .container-message {
+    max-width: 600px;
+    border: 2px solid #ddd;
+    background-color: #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0;
+  }
+  
+  .darker {
+    border-color: #a9d0f7;
+    background-color: #a9d0f7;
+  }
+  
+  .container-message::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .container-message img {
+    float: left;
+    max-width: 60px;
+    width: 100%;
+    margin-right: 20px;
+    border-radius: 50%;
+  }
+  
+  .container-message img.right {
+    float: right;
+    margin-left: 20px;
+    margin-right:0;
+  }
+  
+  .time-right {
+    float: right;
+    color: #f0f0f5;
+  }
+  
+  .time-left {
+    float: left;
+    color: #999;
+  }
